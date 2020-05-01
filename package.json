@@ -1,0 +1,28 @@
+{
+  "name": "@4a/retry",
+  "version": "0.1.0",
+  "description": "失败自动重试",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gavinning/retry.git"
+  },
+  "keywords": [
+    "retry",
+    "auto-retry",
+    "retry-request",
+    "retry-axios"
+  ],
+  "author": "gavinning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gavinning/retry/issues"
+  },
+  "homepage": "https://github.com/gavinning/retry#readme",
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  }
+}
