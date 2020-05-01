@@ -1,6 +1,6 @@
 {
   "name": "@4a/retry",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "失败自动重试",
   "main": "index.js",
   "scripts": {

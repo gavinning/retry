@@ -31,7 +31,7 @@ Retry.delay(300)    // 可选调用 重试间隔300ms，默认300ms，单位ms
         console.log('result:', result)
     })
     .catch(err => {
-        // 所以报错视为失败
+        // 报错视为失败
         // 最后一次重试如果依然报错，则抛出该错误
         console.error('error:', err)
     })
