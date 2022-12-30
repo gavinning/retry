@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/gavinning/retry#readme",
   "devDependencies": {
-    "mocha": "^7.1.2"
+    "mocha": "^10.2.0"
   }
 }
