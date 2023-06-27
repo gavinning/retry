@@ -1,12 +1,12 @@
 /**
  * Retry
  *
- * @author gavinning
+ * @author gavinning <gavinning@qq.com>
  * @description 失败自动重试，可用于http请求重试，或其他需要重试的逻辑
  *
  */
 
-type AnyFunction<T> = (...args: any[]) => T
+export type AnyFunction<T> = (...args: any[]) => T
 
 export class Retry<R = any> {
   private i: number

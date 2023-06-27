@@ -1,16 +1,19 @@
 {
   "name": "@4a/retry",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/retry.umd.cjs",
   "module": "./dist/retry.js",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "test": "vitest --run",
-    "coverage": "NODE_ENV=development vitest run --coverage"
+    "build": "vue-tsc && vite build && npm run type",
+    "type": "tsc src/lib/retry.ts --lib es2015,dom --declarationDir dist --emitDeclarationOnly --declaration",
+    "coverage": "NODE_ENV=development vitest run --coverage",
+    "prepack": "npm run build",
+    "prepublish": "npm run build"
   },
   "exports": {
     ".": {
